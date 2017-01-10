@@ -151,7 +151,7 @@ $semestre = $_SESSION['semestre'];
                                 <div class="panel-body">                            
                                     <div class="tocify-content">
                                     <!-- CATEGORIAS DE ITEMS -->
-                                    <form onSubmit="javascript: return validarFormulario();" id="guardar" action="guardar.php" method="POST">
+                                    <form id="prueba" action="guardar.php" method="POST" onsubmit="return enviar();">
 
                                         <?php
                                          include('comm/conect.php');
@@ -238,17 +238,33 @@ $semestre = $_SESSION['semestre'];
                 var toc = $("#tocify").tocify({context: ".tocify-content", showEffect: "fadeIn",extendPage:false,selectors: "h2, h3, h4" });
             });
 
-            function validarFormulario(){
-                var nombre = document.getElementById("txtNombre");
-                var apellido = document.getElementById("txtApellido");
-                if (nombre == "" || apellido == ""){
-                    alert("Introduce el nombre y el apellido");
+            function enviar(){
+                event.preventDefault();
+                //alert("Si entra a la funcion"); 
+            
+                var tamanio = document.getElementsByTagName('select');
+                var bandera = true;
+                 for (var i=0; i<tamanio.length; i++) {
+                    var elementos = document.getElementsByTagName('select')[i].value;
+                    //alert(elementos);
+
+                    if (elementos == ""){
+                        alert("No respondiste la pregunta "+i);
+                        return false;
+                        break;
+                    }
+                    else{
+                        bandera = false;
+                   }
+                }
+
+                if (bandera == true) {
+                    formulario.submit();
+                    return true;
+                } else{
                     return false;
                 }
-               else{
-                    return true;
-               }
-
+    
             }
 
 
