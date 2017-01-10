@@ -246,10 +246,13 @@ $semestre = $_SESSION['semestre'];
                 var bandera = true;
                  for (var i=0; i<tamanio.length; i++) {
                     var elementos = document.getElementsByTagName('select')[i].value;
-                    //alert(elementos);
+                    
+                    
 
                     if (elementos == ""){
-                        alert("No respondiste la pregunta "+i);
+                        var categoria = document.getElementsByTagName('select')[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.innerHTML;
+                        alert(categoria);
+                        alert("No respondiste la pregunta "+i+".x");
                         return false;
                         break;
                     }
