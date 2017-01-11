@@ -250,19 +250,19 @@ $semestre = $_SESSION['semestre'];
                     
 
                     if (elementos == ""){
-                        var categoria = document.getElementsByTagName('select')[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.innerHTML;
-                        alert(categoria);
-                        alert("No respondiste la pregunta "+i+".x");
+                        var categoria = document.getElementsByTagName('select')[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[1].childNodes[2].innerHTML;
+                        //alert(categoria);
+                        alert("No respondiste la pregunta ►"+i+" en la categoria ►"+categoria);
                         return false;
                         break;
                     }
                     else{
-                        bandera = false;
+                        bandera = true;
                    }
                 }
 
                 if (bandera == true) {
-                    formulario.submit();
+                    prueba.submit();
                     return true;
                 } else{
                     return false;

@@ -11,12 +11,8 @@ include('datab.php');
 			
 			?>
 			<div class="panel panel-info">
-                 <div class="panel-heading">
-                 	<h2 class="panel-title descripcion" >
-						<?php
-						echo $fila['serv_descripcion'];
-						?>
-					</h2>
+			<div class="panel-heading">
+                 <h2 class="panel-title descripcion" ><?php echo $fila['serv_descripcion']; ?></h2>
                  </div>
                  <div class="panel-body">
                  
@@ -28,6 +24,7 @@ include('datab.php');
 				$i =0;
 				while ($fila2 = $query2->fetch_assoc()) {
 					$i++;
+					$j++;
 					$etiqueta="";
 					if ($i%2==0 ) {
 						$etiqueta = 'lineastabla';
@@ -39,7 +36,7 @@ include('datab.php');
 						
 	                  <div class="col-xs-12 col-sm-9 lead col-md-9 col-md-offset-0 ">
 					<?php
-					echo $i." - ".$fila2['item_descripcion'];
+					echo $j.".- ".$fila2['item_descripcion'];
 					?>
 					 </div>
                        <div class="col-xs-9 col-xs-offset-2 col-sm-3 col-md-3 col-md-offset-0 alinear">
