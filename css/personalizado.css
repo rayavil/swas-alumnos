@@ -1,11 +1,91 @@
-.panel-principal{
-  margin-top: 10px;
+.logo-gracias{
+	background-color: #33414E;
 }
 
-.footer{
-  margin: 20px;
+.logo-gracias img{
+	margin: auto;
+
+	padding-bottom: 2%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
-.informacion{
-	padding: 20px;
+.logo-gracias img:hover{
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+
+}
+
+.texto-gracias{
+
+	background-color: #ededed;
+	padding-bottom: 5%;
+	margin-bottom: 1.7%;
+}
+
+.estrella{
+	display: block;
+    margin: auto;
+    padding-top: 2%;
+ 
+}
+
+h2{
+	color: #fff;
+	text-align: center;
+	margin-top: 1.5%;
+	padding-top: 3%;
+}
+
+body{
+	background-color: #fff;
+	background-image: url("../img/l_013.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;           /* Safari 3.0 */
+     -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+       -o-background-size: 100% 100%;           /* Opera 9.5 */
+          background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+ 
+
+}
+
+.parrafo{
+	color: #636363;
+		margin: auto;
+	margin-left: auto;
+	width: 70%;
+}
+
+a{
+	margin-top: 3%;
+
+}
+
+.caja {
+-webkit-box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.26);
+-moz-box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.26);
+box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.26);
+}
+
+.piefin{
+	font-size: 0.8em;
+	padding-top: 2%;
+}
+
+
+
+
+.nom{
+	font-size: 1.1em;
+font-family: 'Aldrich', sans-serif;
+}
+
+input:focus {
+    box-shadow: 0 0 15px green;
+    -webkit-box-shadow: 0 0 15px green; 
+    -moz-box-shadow: 0 0 15px green;
+    border:1px solid green; 
+    background-color:white;
 }

@@ -339,7 +339,7 @@
 .form-material #focusedInput {
   border-color: #ccc;
   border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
+  outline: ;
   box-shadow: none;
 }
 .form-material .radio-material {
@@ -11241,4 +11241,13 @@ li.ext_zip {
 
 .alinear {
   padding-top: 1%;
+}
+
+.nom{
+  font-size: 1.1em;
+font-family: 'Aldrich', sans-serif;
+}
+
+.informacion{
+  padding: 4%;
 }

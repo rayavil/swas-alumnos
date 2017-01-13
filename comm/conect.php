@@ -1,3 +1,4 @@
+<form id="prueba" action="comm/guardar.php" method="POST" onsubmit="return enviar();">
 <?php 
 
 include('datab.php');
