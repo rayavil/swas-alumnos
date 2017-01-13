@@ -47,7 +47,7 @@ Se agradece tu atención y seriedad para contestar la presente.
                                 <div class="input-group-addon">
                                     <span class="glyphicon glyphicon-user"></span>
                                 </div>
-                                <input type="text" id="noctrl" name="noctrl" class="form-control" placeholder="Numero de Control" required>
+                                <input maxlength="11" onkeypress="return soloLetras(event)" type="text" id="noctrl" name="noctrl" class="form-control" placeholder="Numero de Control" required>
                             </div>
                         </div>
                     </div>
@@ -117,6 +117,7 @@ Se agradece tu atención y seriedad para contestar la presente.
                         <div class="col-md-12" id="buscando">
                             
                         </div>
+
                     
                     <div class="form-group">
                         <div class="col-md-12">
@@ -127,7 +128,7 @@ Se agradece tu atención y seriedad para contestar la presente.
                 </div>
                 <div class="login-footer">
                     <div class="pull-right">
-                        &copy; 2016 Software de Auditoria de Servicios
+                        &copy; <?php echo date('Y'); ?> Software de Auditoria de Servicios
                     </div>
                     
                 </div>

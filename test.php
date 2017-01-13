@@ -15,13 +15,14 @@ $semestre = $_SESSION['semestre'];
         <title>Bienvenido Auditoria de Servicios</title>            
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initia   l-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <!-- END META SECTION -->
         
         <!-- CSS INCLUDE -->        
         <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
         <!-- EOF CSS INCLUDE -->
 
 
@@ -102,7 +103,7 @@ $semestre = $_SESSION['semestre'];
                 <div class="page-content-wrap">
                     
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-xs-12 col-md-9">
                             
                                 
                             <div class="panel panel-default">                                
@@ -113,10 +114,10 @@ $semestre = $_SESSION['semestre'];
                                     <div class="panel panel-warning">
                                       <div class="panel-body">
                                         <div class="row">
-                                            <div class="col-md-9 col-sm-12 ">
+                                            <div class=" col-xs-12 col-md-9 ">
                                                 <strong>1. </strong> En el cuadro correspondiente de la columna SERVICIO indica la calificación que le asignas, según tu experiencia con el servicio de que se trata, con base en la siguiente escala:
                                             </div>
-                                            <div class="col-md-3 col-sm-10 center-block">
+                                            <div class="col-xs-12 col-md-3 center-block">
 
                                                
                                                     <select id="example-1to10" name="rating" autocomplete="off">
@@ -140,19 +141,18 @@ $semestre = $_SESSION['semestre'];
                             </div>
                             
                         </div>
-                        <div class="col-md-3" style="position: relative;">
+                        <div class="col-md-3 hidden-xs" style="position: relative;">
                             <div id="tocify"></div>
                         </div>
                     </div>
                     
                     <div class="row">                        
-                        <div class="col-md-9">
+                        <div class="col-xs-12 col-md-9">
                             <div class="panel panel-default">
                                 <div class="panel-body">                            
                                     <div class="tocify-content">
                                     <!-- CATEGORIAS DE ITEMS -->
-                                    <form id="prueba" action="guardar.php" method="POST" onsubmit="return enviar();">
-
+                                    
                                         <?php
                                          include('comm/conect.php');
                                         ?>
@@ -161,7 +161,7 @@ $semestre = $_SESSION['semestre'];
                                     </div> 
                                 </div>
                                 <div class="row">
-                                  <div class="col-sm-12 ">
+                                  <div class="col-xs-12 ">
                                     <button class="btn btn-success btn-lg btn-block" id="save">GUARDAR</button>
                                   </div>
                                   
@@ -173,7 +173,7 @@ $semestre = $_SESSION['semestre'];
                     </div>
 
                     <footer class="text-center pie">
-                      © <?php echo date('Y'); ?> - Software de Auditoria de Servicios para el ITSF <br> Desarrollado por I.S.C. Ramón AG
+                      © <?php echo date('Y'); ?> - Software de Auditoria de Servicios para el ITSF <br> Desarrollado por I.S.C. <span class="nom">Ramón AG<span>
                     </footer>
             
                 </div>
