@@ -10,9 +10,17 @@ session_start();
 	$carrera  = $_SESSION['consulta']; 
 	$semestre  = $_SESSION['semestre'];  
 	$sexo      = $_SESSION['sexo'];
+
+
+	echo $ctrl;
+
+	echo "<br>";
 // Registramos primero al alumno para despues guardar sus respuestas.
 
-    $queryalumno = "INSERT INTO alumnos (ctrl_alu, alu_carrera, semestre, sexo) VALUES (".$ctrl.", ".$carrera.", ".$semestre.", ".$sexo.")";
+    $queryalumno = "INSERT INTO alumnos (ctrl_alu, alu_carrera, semestre, sexo) VALUES ('".$ctrl."', ".$carrera.", ".$semestre.", ".$sexo.")";
+
+    echo $queryalumno;
+    echo "<br>";
 
     $agregar = $db->query($queryalumno);
 	if ($agregar) {
@@ -36,7 +44,7 @@ foreach ($_POST['valor'] as $item => $value){
 		$datosInsert .= ", ";
 	}	
 
-	$datosInsert .= "(".$item.", ".$ctrl.", ".$auditoria.", ".$value.")";
+	$datosInsert .= "(".$item.", '".$ctrl."', ".$auditoria.", ".$value.")";
      //echo $item.": ".$value."<br>";
 
 }
@@ -45,6 +53,10 @@ foreach ($_POST['valor'] as $item => $value){
 
 	$query= "INSERT INTO encuesta (id_item, alumno, no_auditoria, resultado) VALUES ".$datosInsert;
 	//echo $query;
+	//
+	echo $query;
+    echo "<br>";
+
 	$insert = $db->query($query);
 	if ($insert) {
 		

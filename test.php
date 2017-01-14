@@ -6,6 +6,8 @@ session_start();
  }
 $semestre = $_SESSION['semestre'];
 
+echo $_SESSION['ctrl'];
+
  ?>
 
 <!DOCTYPE html>

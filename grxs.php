@@ -60,6 +60,7 @@ if (!isset($_SESSION['alumnoCreado'])) {
 
 </html>
 <?php 
+$_SESSION = array();
 session_destroy();
 
 ?>
