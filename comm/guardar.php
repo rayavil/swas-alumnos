@@ -17,7 +17,7 @@ session_start();
 	echo "<br>";
 // Registramos primero al alumno para despues guardar sus respuestas.
 
-    $queryalumno = "INSERT INTO alumnos (ctrl_alu, alu_carrera, semestre, sexo) VALUES ('".$ctrl."', ".$carrera.", ".$semestre.", ".$sexo.")";
+    $queryalumno = "INSERT INTO alumnos (ctrl_alu, alu_carrera, semestre, sexo, auditoria) VALUES ('".$ctrl."', ".$carrera.", ".$semestre.", ".$sexo.",".$auditoria.")";
 
     echo $queryalumno;
     echo "<br>";
