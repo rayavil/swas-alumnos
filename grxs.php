@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION['alumnoCreado'])) {
 	header('Location: index.php');
 }
-
+header("Content-Type: text/html;charset=utf-8");
 
 ?>
 
@@ -15,7 +15,7 @@ if (!isset($_SESSION['alumnoCreado'])) {
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <!-- END META SECTION -->
         

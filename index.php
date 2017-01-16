@@ -9,7 +9,7 @@
         
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <!-- END META SECTION -->
-        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <!-- CSS INCLUDE -->        
         <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
         <link rel="stylesheet" type="text/css" id="theme" href="css/personalizado.css"/>
