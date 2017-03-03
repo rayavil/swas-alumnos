@@ -1,7 +1,6 @@
 <?php 
 session_start();
 
-
  if (!isset($_SESSION['ctrl']) ) {
    header("Location: index.php");
  }

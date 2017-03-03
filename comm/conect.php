@@ -1,6 +1,6 @@
 <form id="prueba" action="comm/guardar.php" method="POST" onsubmit="return enviar();">
 <?php 
-header("Content-Type: text/html;charset=utf-8");
+
 
 include('datab.php');
 
